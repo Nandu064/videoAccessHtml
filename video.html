@@ -3,17 +3,22 @@
 <head>
 <meta charset="utf-8">
 <title>Display Webcam Stream</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+ integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+ crossorigin="anonymous">
  
 <style>
 #container {
 	margin: 0px auto;
-	width: 30%;
-	height: 20%;
+	width: 500px;
+	height: 700px;
 	border: 10px #333 solid;
 }
 #videoElement {
 	width: 50%;
 	height: auto;
+	margin-top: 90px;
+	margin-left: 50%;
 	background-color:black;
 }
 .header{
@@ -25,6 +30,8 @@
 .student{
 	font-size: 28px;
 	font-weight: bold;
+	margin-left: 30%;
+	margin-bottom: 0px;
 }
 .video{
 	width:auto;
@@ -34,20 +41,24 @@
 </head>
  
 <body>
-<div id="container">
-	<div class="header">
-		Please check the video for istructions
-	</div>
-	<iframe class="video" src="https://www.youtube.com/embed/tgbNymZ7vqY">
-	</iframe >
-	<div class="student">
-		student live Goes here
-	</div>
-	<video autoplay="true" id="videoElement">
-	
-	</video>
-	
-</div>
+<div class="container" id="container" >
+	<div class="row">
+		<div class="col-sm">
+			<h1>Please check the video for Instructions</h1>
+		</div>
+		<div class="embed-responsive embed-responsive-16by9">
+			<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tgbNymZ7vqY" allowfullscreen></iframe>
+		</div>
+		<div class="col-sm">
+			<div class="student">
+				student live Goes here
+			</div>
+			<video autoplay="true" id="videoElement">
+				
+			</video>
+		</div>
+	 </div>
+  </div>
 <script>
     var video = document.querySelector("#videoElement");
 
