@@ -1,3 +1,3 @@
 # videoAccessHtml
 
-## This is a simple page which is used to demonstrate how to use getUserMedia() in javascript.
+## Design a web template that has a grid with provision for one live instructional video, space to show live video of the student listening to it and his emotions status
